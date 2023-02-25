@@ -1,0 +1,74 @@
+.bg {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(-45deg, #ffeb3b, #74efff, #9c27b0);
+    background-size: 400% 400%;
+    animation: gradient-bg 200s ease infinite;
+}
+
+@keyframes gradient-bg {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.btn {
+    height: 70px;
+    width: 70px;
+    margin: 15px;
+    background-color: rgba(245, 245, 245, 0.324);
+}
+
+.firstRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#screen {
+    width: 390px;
+    border: 1px solid dimgray;
+    background-color: rgba(245, 245, 245, 0.421);
+    border-radius: 8px;
+    height: 95px;
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#screen:hover {
+    background-color: rgba(245, 245, 245, 0.668);
+}
+
+#previousDisplay {
+    font-size: 25px;
+    height: 30px;
+}
+
+#currentDisplay {
+    font-size: 40px;
+    height: 45px;
+}
+
+.equal {
+    width: 175px;
+}
